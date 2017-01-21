@@ -27,11 +27,11 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
 
-    <ImageView
+    <pl.droidsonroids.gif.GifTextView
         android:layout_width="match_parent"
-        android:layout_height="134dp"
-        app:srcCompat="@drawable/tastebuds"
-        android:id="@+id/imageView4" />
+        android:layout_height="85dp"
+        android:background="@drawable/namegif"
+        android:id="@+id/gifTitle" />
 
     <TextView
         android:layout_width="match_parent"
