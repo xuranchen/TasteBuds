@@ -6,6 +6,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.hackgteeny.tastebuds.Model.User;
+
 public class RegistrationActivity extends AppCompatActivity {
     private EditText username;
     private EditText password;
@@ -27,7 +29,9 @@ public class RegistrationActivity extends AppCompatActivity {
 
     public void register() {
         if (isValid()) {
-
+            User newUser = new User(username.getText().toString(),
+                                    email.getText().toString(),
+                                    password.getText().toString());
             //TODO Serialize to server
 
         }
