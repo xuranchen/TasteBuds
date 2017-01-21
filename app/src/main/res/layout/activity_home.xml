@@ -16,16 +16,6 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="23dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/tastebuds"
-        android:id="@+id/imageView10"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageButtonFriends"
-        android:layout_alignParentBottom="true" />
-
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,10 +40,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/chatbox"
-        android:layout_above="@+id/imageView10"
         android:layout_toEndOf="@+id/imageButtonFriends"
         android:layout_marginStart="26dp"
         android:id="@+id/imageButtonChatbox"
         android:background="@mipmap/chatbox"/>
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/namegif"
+        android:id="@+id/gifTitle"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
