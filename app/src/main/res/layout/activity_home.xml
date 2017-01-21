@@ -29,9 +29,9 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/chatboxes"
+        app:srcCompat="@drawable/chatboxes"
         android:id="@+id/imageButton28"
-        android:background="@mipmap/chatboxes"
+        android:background="@drawable/chatboxes"
         android:layout_marginStart="23dp"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/imageButtonFriends" />
