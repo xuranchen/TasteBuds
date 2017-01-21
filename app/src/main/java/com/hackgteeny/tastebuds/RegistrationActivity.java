@@ -33,9 +33,8 @@ public class RegistrationActivity extends AppCompatActivity {
                                     email.getText().toString(),
                                     password.getText().toString());
             //TODO Serialize to server
-
+            finish();
         }
-        finish();
     }
     public void cancel() {
         finish();
@@ -61,6 +60,8 @@ public class RegistrationActivity extends AppCompatActivity {
             createError("User is already registered, please choose another username");
             return false;
         }
+        // check in firebase
+
         return true;
     }
     private void createError(String text) {
