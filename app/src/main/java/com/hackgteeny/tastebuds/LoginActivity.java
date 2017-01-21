@@ -155,7 +155,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * errors are presented and no actual login attempt is made.
      */
     private void attemptLogin() {
-        if (mAuthTask != null) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+        /*if (mAuthTask != null) {
             return;
         }
 
@@ -201,7 +203,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // start activity
             Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
-        }
+        }*/
     }
 
     private boolean isEmailValid(String email) {
