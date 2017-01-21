@@ -29,16 +29,6 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/chatboxes"
-        android:id="@+id/imageButton28"
-        android:background="@drawable/chatboxes"
-        android:layout_marginStart="23dp"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/imageButtonFriends" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@mipmap/logout"
         android:id="@+id/imageButtonExit"
         android:background="@mipmap/logout"
@@ -55,5 +45,15 @@
         android:layout_marginEnd="18dp"
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/imageButtonExit" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/chatbox"
+        android:layout_above="@+id/imageView10"
+        android:layout_toEndOf="@+id/imageButtonFriends"
+        android:layout_marginStart="26dp"
+        android:id="@+id/imageButtonChatbox"
+        android:background="@mipmap/chatbox"/>
 
 </RelativeLayout>
