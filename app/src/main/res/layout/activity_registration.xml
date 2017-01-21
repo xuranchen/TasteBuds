@@ -51,8 +51,7 @@
         android:layout_below="@+id/confirm_email"
         android:layout_alignStart="@+id/confirm_email"
         android:layout_marginTop="28dp"
-        android:id="@+id/password"
-        android:text="pw" />
+        android:id="@+id/password" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -62,6 +61,5 @@
         android:layout_marginBottom="12dp"
         android:id="@+id/confirm_password"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/password"
-        android:text="confirm pw" />
+        android:layout_alignStart="@+id/password" />
 </RelativeLayout>
