@@ -1,59 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp" >
+    android:paddingRight="16dp"
+    android:orientation="vertical">
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/stalker"
-        android:id="@+id/imageButtonFriends"
-        android:background="@mipmap/stalker"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="23dp" />
+        android:background="@color/colorPrimary"
+        android:padding="0dp">
 
-    <ImageView
-        android:layout_width="wrap_content"
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- This is a centered logo -->
+            <ImageView
+                android:id="@+id/toolbar_logo"
+                android:src="@drawable/tastebuds"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp" />
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/tastebuds"
-        android:id="@+id/imageView10"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageButtonFriends"
-        android:layout_alignParentBottom="true" />
+        android:id="@+id/tab">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/chatboxes"
-        android:id="@+id/imageButton28"
-        android:background="@drawable/chatboxes"
-        android:layout_marginStart="23dp"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/imageButtonFriends" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/stalker"
+            android:id="@+id/imageButtonFriends"
+            android:background= "#ffffff"
+            android:layout_marginStart="23dp"
+            android:layout_weight="1" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/logout"
-        android:id="@+id/imageButtonExit"
-        android:background="@mipmap/logout"
-        android:layout_marginEnd="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/chatboxes"
+            android:id="@+id/imageButton28"
+            android:background= "#ffffff"
+            android:layout_marginStart="23dp"
+            android:layout_weight="1" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/profile"
-        android:id="@+id/imageButtonProfile"
-        android:background="@mipmap/profile"
-        android:layout_marginEnd="18dp"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/imageButtonExit" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/profile"
+            android:id="@+id/imageButtonProfile"
+            android:background= "#ffffff"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1" />
 
-</RelativeLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logout"
+            android:id="@+id/imageButtonExit"
+            android:background= "#ffffff"
+            android:layout_marginEnd="20dp"
+            android:onClick="logout"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.hackgteeny.tastebuds.listFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_list" />
+
+</LinearLayout>
+
+

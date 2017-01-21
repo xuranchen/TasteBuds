@@ -10,14 +10,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hackgteeny.tastebuds.LoginActivity">
 
+
     <!-- Login progress -->
-    <ProgressBar
-        android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone" />
+        android:background="@color/colorPrimary"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- This is a centered logo -->
+            <ImageView
+                android:id="@+id/toolbar_logo"
+                android:src="@drawable/tastebuds"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp" />
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
 
     <ScrollView
         android:id="@+id/login_form"
@@ -69,8 +96,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
+                android:text="sign in"
                 android:textStyle="bold" />
+
+            <Button
+                android:text="Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registration_button"
+                android:onClick="register" />
 
         </LinearLayout>
     </ScrollView>

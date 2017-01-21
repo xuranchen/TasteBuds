@@ -2,6 +2,7 @@ package com.hackgteeny.tastebuds;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -24,6 +25,8 @@ public class RegistrationActivity extends AppCompatActivity {
         confirm_email = (EditText) findViewById(R.id.confirm_email);
         password = (EditText) findViewById(R.id.password);
         confirm_password = (EditText) findViewById(R.id.confirm_password);
+        Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(tb);
 
     }
 
