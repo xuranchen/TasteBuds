@@ -42,6 +42,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.hackgteeny.tastebuds.Model.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -232,11 +233,30 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 }
             }
         }
+        User u = null;
+        for (DataSnapshot child : dataSnapshot.getChildren()) {
+            if (child.getKey().equals(user)) {
+                String pw = "";
+                String em =  "";
+                String food = "";
+                for (DataSnapshot child2 : child.getChildren()) {
+                    if (child2.getKey().equals("password")) {
+                        pw = (String) child2.getValue();
+                    } else if (child2.getKey().equals("email")) {
+                        em = (String) child2.getValue();
+                    } else {
+                        food = (String) child2.getValue();
+                    }
+                }
+                u = new User(user, em, pw, food);
+            }
+        }
         if (!userExists) {
             makeToast("This username doesn't exist!");
             return;
         }
         Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("curUser", u);
         startActivity(intent);
     }
 

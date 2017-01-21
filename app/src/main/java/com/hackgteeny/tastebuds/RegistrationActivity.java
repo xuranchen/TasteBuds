@@ -31,7 +31,8 @@ public class RegistrationActivity extends AppCompatActivity {
         if (isValid()) {
             User newUser = new User(username.getText().toString(),
                                     email.getText().toString(),
-                                    password.getText().toString());
+                                    password.getText().toString(),
+                                    "");
             //TODO Serialize to server
             finish();
         }
