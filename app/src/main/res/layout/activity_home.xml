@@ -6,4 +6,54 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp" >
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/stalker"
+        android:id="@+id/imageButtonFriends"
+        android:background="@mipmap/stalker"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/chatboxes"
+        android:layout_marginStart="25dp"
+        android:id="@+id/imageButtonChats"
+        android:background="@mipmap/chatboxes"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageButtonFriends" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logout"
+        android:id="@+id/imageButtonExit"
+        android:background="@mipmap/logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/profile"
+        android:id="@+id/imageButtonProfile"
+        android:background="@mipmap/profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/imageButtonExit"
+        android:layout_marginEnd="66dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tastebuds"
+        android:id="@+id/imageView10"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButtonFriends"
+        android:layout_alignParentBottom="true" />
+
 </RelativeLayout>
