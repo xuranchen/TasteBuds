@@ -88,7 +88,6 @@ public class RegistrationActivity extends AppCompatActivity {
                 makeToast("Username already exists! Please select another username!");
             }
         }
-
     }
 
     private  Map<String, Object> userToMap(User u) {
