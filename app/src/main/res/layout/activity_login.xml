@@ -37,11 +37,12 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <ImageView
+            <pl.droidsonroids.gif.GifTextView
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                app:srcCompat="@drawable/tastebuds"
-                android:id="@+id/imageView6" />
+                android:layout_height="70dp"
+                android:background="@drawable/namegif"
+                android:id="@+id/gifTitle"
+                />
 
             <TextView
                 android:layout_width="match_parent"
