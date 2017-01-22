@@ -69,7 +69,8 @@
             android:id="@+id/imageButtonProfile"
             android:background= "#ffffff"
             android:layout_marginEnd="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="viewProfile" />
 
         <ImageButton
             android:layout_width="wrap_content"

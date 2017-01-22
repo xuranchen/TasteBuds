@@ -3,6 +3,7 @@ package com.hackgteeny.tastebuds;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -30,7 +31,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     }
 
-    public void register() {
+    public void register(View v) {
         if (isValid()) {
             User newUser = new User(username.getText().toString(),
                                     email.getText().toString(),
@@ -40,7 +41,7 @@ public class RegistrationActivity extends AppCompatActivity {
             finish();
         }
     }
-    public void cancel() {
+    public void cancel(View v) {
         finish();
     }
     private boolean isValid() {
