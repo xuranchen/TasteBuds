@@ -33,11 +33,15 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
 
-
-
-
-
+dependencies {
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+}
 
 
 apply plugin: 'com.google.gms.google-services'
