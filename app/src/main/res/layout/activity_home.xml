@@ -10,9 +10,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="36dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/tastebuds"
-        android:id="@+id/imageView4" />
+        android:id="@+id/imageView5" />
 
 
     <LinearLayout
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/logout"
             android:id="@+id/imageButtonExit"
-            android:background= "@mipmap/logout"
+            android:background= "#ffffff"
             android:layout_marginEnd="20dp"
             android:onClick="logout"
             android:layout_weight="1" />

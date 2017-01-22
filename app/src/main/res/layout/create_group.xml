@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tastebuds"
+        android:id="@+id/imageView2" />
+
+    <Button
+        android:text="Set Avatar (optional)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupProfilePic"
+        android:background="@mipmap/buds"
+        android:layout_weight="0.71"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Group Name"
+        android:ems="10"
+        android:id="@+id/groupName"
+        android:gravity="center" />
+
+</LinearLayout>

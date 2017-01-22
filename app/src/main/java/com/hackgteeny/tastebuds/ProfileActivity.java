@@ -26,7 +26,7 @@ public class ProfileActivity extends AppCompatActivity {
         email = (TextView) findViewById(R.id.email);
         food = (TextView) findViewById(R.id.faveFood);
 
-        name.setText(u.getName());
+        name.setText(u.getUsername());
         email.setText(u.getEmail());
         food.setText(u.getFaveFood());
 

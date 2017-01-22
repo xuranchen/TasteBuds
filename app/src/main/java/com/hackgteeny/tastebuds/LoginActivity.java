@@ -238,7 +238,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         for (DataSnapshot child : dataSnapshot.getChildren()) {
             if (child.getKey().equals(user)) {
                 String pw = "";
-                String em = "";
+                String em =  "";
                 String food = "";
                 for (DataSnapshot child2 : child.getChildren()) {
                     if (child2.getKey().equals("password")) {
@@ -246,8 +246,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     } else if (child2.getKey().equals("email")) {
                         em = (String) child2.getValue();
                     }
-                    u = new User(user, em, pw, food);
                 }
+                u = new User(user, em, pw);
             }
         }
         if (!userExists) {
