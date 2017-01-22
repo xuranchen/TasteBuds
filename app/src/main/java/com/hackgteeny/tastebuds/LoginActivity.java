@@ -245,8 +245,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         pw = (String) child2.getValue();
                     } else if (child2.getKey().equals("email")) {
                         em = (String) child2.getValue();
-                    } else {
-                        food = (String) child2.getValue();
                     }
                 }
                 u = new User(user, em, pw, food);
