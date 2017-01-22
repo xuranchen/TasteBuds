@@ -247,7 +247,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         em = (String) child2.getValue();
                     }
                 }
-                u = new User(user, em, pw, food);
+                u = new User(user, em, pw);
             }
         }
         if (!userExists) {
