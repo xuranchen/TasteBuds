@@ -27,6 +27,15 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void viewFriendList(View v) {
+        Intent i = getIntent();
+        User u = (User) i.getSerializableExtra("curUser");
+        Intent intent = new Intent(this, FriendActivity.class);
+        intent.putExtra("curUser", u);
+        startActivity(intent);
+    }
+
     public void logout(View v) {
         finish();
     }

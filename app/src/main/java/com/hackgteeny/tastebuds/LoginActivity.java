@@ -96,7 +96,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mDatabase.child("Users").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(final DataSnapshot dataSnapshot) {
-                Log.e("DATAAA", dataSnapshot.toString());
                 // Set up the login form.
                 mUserView = (AutoCompleteTextView) findViewById(R.id.email);
                 populateAutoComplete();

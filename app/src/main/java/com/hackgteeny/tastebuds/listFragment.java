@@ -38,14 +38,12 @@ public class listFragment extends ListFragment implements OnItemClickListener {
     }
 
     public void showFriend() {
-        if (mode == 1) {
-            //TODO set friends
-        }
     }
 
     public void showGroup() {
         if (mode == 0) {
             //TODO show group
+            mode = 1;
         }
     }
 }
